@@ -82,26 +82,3 @@ body {
 </template>
 >
 
-<script>
-function expose() {
-  alert(
-    "Your contact details will be sent to the seller.Are you sure you want to submit your information?"
-  );
-  var arr = new Array();
-  var namex = document.getElementById("namex");
-  var num1x = document.getElementById("num1x");
-  var num2x = document.getElementById("num2x");
-  var mailx = document.getElementById("mailx");
-  var det = new Object();
-  det = {
-    name: namex.value,
-    num1: num1x.value,
-    num2: num2x.value,
-    email: emailx.value,
-  };
-  arr.push(det);
-  for (var key in list) {
-    console.log(key, list[key]);
-  }
-}
-</script>
